@@ -1,0 +1,13 @@
+Primeiro Passo (terminal A):
+
+  make serial SERIAL_DEV=/dev/ttyUSB1
+  cat /dev/ttyUSB1
+
+Segundo Passo (terminal B):
+
+  make application F_CLK=50000000
+
+Terceiro Passo (terminal C):
+
+  make load SERIAL_DEV=/dev/ttyUSB1
+  
